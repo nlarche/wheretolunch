@@ -2,17 +2,6 @@
   wheretolunch Works!
 </p>
 
-<h2>new Place</h2>
-<div>
-<input  
-       [(ng-model)]="newPlace.name" 
-       (keyup.enter)="addPlace(newPlace)" 
-       placeholder="name" />
-</div>
+<place-edit></place-edit>
 
-<h2>Places</h2>
-<ul class="places">
-   <li *ng-for="#place of places">
-    <span class="badge">{{place.name}}</span>
-  </li>
-</ul>
+<place-list></place-list>
