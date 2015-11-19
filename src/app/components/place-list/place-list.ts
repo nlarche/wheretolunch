@@ -1,6 +1,9 @@
 import {Component} from 'angular2/angular2';
 import {Place} from '../../model/place';
 import {PlaceService} from '../../services/place-service/place-service';
+import {PlaceRender} from '../../components/place-render/place-render';
+import {PlaceSelect} from '../../components/place-select/place-select';
+import {StartsWith} from '../../pipes/starts-with/starts-with';
 
 
 @Component({
@@ -8,8 +11,8 @@ import {PlaceService} from '../../services/place-service/place-service';
   templateUrl: 'app/components/place-list/place-list.html',
   styleUrls: ['app/components/place-list/place-list.css'],
   providers: [],
-  directives: [],
-  pipes: []
+  directives: [PlaceRender, PlaceSelect],
+  pipes: [StartsWith]
 })
 export class PlaceList {
   

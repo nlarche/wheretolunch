@@ -23,8 +23,7 @@ export class PlaceEdit {
   
     addPlace(place: Place){
    
-    if (place.name){   
-      place.id =  this.placeService.getPlaces().length;  
+    if (place.name){
       this.placeService.addPlace(place);
       this.newPlace= new Place();  
    }    

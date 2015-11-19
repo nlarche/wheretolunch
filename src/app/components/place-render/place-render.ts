@@ -1,16 +1,23 @@
-import {Component} from 'angular2/angular2';
+import {Component, Input, NgClass} from 'angular2/angular2';
+import {Place} from '../../model/place';
 
 
 @Component({
   selector: 'place-render',
   templateUrl: 'app/components/place-render/place-render.html',
-  styleUrls: ['app/components/place-render/place-render.css'],
+  styles: [`
+    .${Place.STARTED} {
+	     color : green
+    }
+    .${Place.COMPLETED} {
+	     color: red
+     }
+  `],
   providers: [],
-  directives: [],
+  directives: [NgClass],
   pipes: []
 })
-export class PlaceRender {
-
-  constructor() {}
+export class PlaceRender {  
+  @Input() place : Place;  
 
 }

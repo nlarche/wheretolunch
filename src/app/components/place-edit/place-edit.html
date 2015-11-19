@@ -1,7 +1,8 @@
 <h2>new Place</h2>
 <div>
-<input  
-       [(ng-model)]="newPlace.name" 
-       (keyup.enter)="addPlace(newPlace)" 
-       placeholder="name" />
+    <form (ng-submit)="addPlace(newPlace)">   
+        <input  
+            [(ng-model)]="newPlace.name"             
+            placeholder="name" />
+    </form>       
 </div>

@@ -1,3 +1,4 @@
-<p>
-  place-render Works!
-</p>
+ <div *ng-if="place">
+ 	<span [ng-class]="place.status" >{{place.name}}</span>
+	 <button (click)="place.toggle()">Toggle</button>
+ </div>
