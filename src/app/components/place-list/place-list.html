@@ -1,7 +1,7 @@
 <h2>Places</h2>
 <div>
   <Place-select #place-select></Place-select>
-  <Place-render *ng-for="#place of places | StartsWith:'name':placeSelect.selectedOption"
+  <Place-render *ng-for="#place of places | Search:['name']:placeSelect.selectedOption"
         [place]="place" >
   </Place-render>
 </div>

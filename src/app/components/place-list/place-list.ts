@@ -3,7 +3,7 @@ import {Place} from '../../model/place';
 import {PlaceService} from '../../services/place-service/place-service';
 import {PlaceRender} from '../../components/place-render/place-render';
 import {PlaceSelect} from '../../components/place-select/place-select';
-import {StartsWith} from '../../pipes/starts-with/starts-with';
+import {Search} from '../../pipes/search/search';
 
 
 @Component({
@@ -12,7 +12,7 @@ import {StartsWith} from '../../pipes/starts-with/starts-with';
   styleUrls: ['app/components/place-list/place-list.css'],
   providers: [],
   directives: [PlaceRender, PlaceSelect],
-  pipes: [StartsWith]
+  pipes: [Search]
 })
 export class PlaceList {
   
