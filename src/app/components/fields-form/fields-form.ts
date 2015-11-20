@@ -1,10 +1,14 @@
+/// <reference path="../../../typings/_custom.d.ts" />
+
 import {Component, ControlGroup, Control} from 'angular2/angular2';
 
+let template = require('./fields-form.html');
+let style = require('./fields-form.css');
 
 @Component({
   selector: 'fields-form',
-  templateUrl: 'app/components/fields-form/fields-form.html',
-  styleUrls: ['app/components/fields-form/fields-form.css'],
+  template: template,
+  styles: [style],
   providers: [],
   directives: [],
   pipes: []

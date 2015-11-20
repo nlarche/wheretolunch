@@ -1,12 +1,16 @@
+/// <reference path="../../../typings/_custom.d.ts" />
+
 import {Component} from 'angular2/angular2';
 import {Place} from '../../model/place';
 import {PlaceService} from '../../services/place-service/place-service';
 
+let template = require('./place-edit.html');
+let style = require('./place-edit.css');
 
 @Component({
   selector: 'place-edit',
-  templateUrl: 'app/components/place-edit/place-edit.html',
-  styleUrls: ['app/components/place-edit/place-edit.css'],
+  template: template,
+  styles: [style],
   providers: [],
   directives: [],
   pipes: []
