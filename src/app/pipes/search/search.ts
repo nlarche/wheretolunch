@@ -10,7 +10,7 @@ export class Search {
   transform(value, [fields, letter]:[string[], string]) {    
     return value.filter(
       (item) => fields.some(
-        (field) =>item[field].includes(letter)      
+        (field) =>item[field].toLowerCase().includes(letter)      
       ));
   }
 

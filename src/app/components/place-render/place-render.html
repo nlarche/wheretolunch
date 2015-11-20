@@ -1,4 +1,5 @@
  <div *ng-if="place">
- 	<span [ng-class]="place.status" >{{place.name}}</span>
+ 	 <span [ng-class]="place.status" >{{place.name}}</span>
+	 <span  >{{place.place}}</span>
 	 <button (click)="place.toggle()">Toggle</button>
  </div>

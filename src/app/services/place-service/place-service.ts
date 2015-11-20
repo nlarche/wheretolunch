@@ -9,16 +9,10 @@ export class PlaceService {
   
   constructor() {    
     this.places = [
-      new Place("Mr. Nice"),
-      new Place("Narco" ),
-      new Place("Bombasto" ),
-      new Place("Celeritas" ),
-      new Place( "Magneta" ),
-      new Place("RubberMan" ),
-      new Place("Dynama" ),
-      new Place("Dr IQ" ),
-      new Place("Magma" ),
-      new Place("Tornado" )
+      new Place("azerty", "qsdsd"),
+      new Place("Narco", "cvbcv" ),
+      new Place("Bombasto", "sdfsdfs" ),
+      new Place("Celeritas", "qsfdqsdqd" )     
     ];    
   }
   

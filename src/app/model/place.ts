@@ -4,10 +4,12 @@ export class Place {
   static COMPLETED:string = "completed"  
   
   name : string;
+  place: string;
   status:string = Place.STARTED;  
   
-  constructor(name: string=""){
+  constructor(name: string="", place: string=""){
     this.name = name;
+    this.place = place;
   }
   
   toggle():void{
